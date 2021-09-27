@@ -15,16 +15,16 @@ module Hue
 
     # Hue of the group. This is a wrapping value between 0 and 65535.
     # Both 0 and 65535 are red, 25500 is green and 46920 is blue.
-    attr_accessor :hue
+    attr_reader :hue
 
     # Saturation of the group. 255 is the most saturated (colored)
     # and 0 is the least saturated (white).
-    attr_accessor :saturation
+    attr_reader :saturation
 
     # Brightness of the group. This is a scale from the minimum
     # brightness the group is capable of, 0, to the maximum capable
     # brightness, 255. Note a brightness of 0 is not off.
-    attr_accessor :brightness
+    attr_reader :brightness
 
     # The x coordinate of a color in CIE color space. Between 0 and 1.
     #
@@ -40,7 +40,7 @@ module Hue
     # are capable of 153 (6500K) to 500 (2000K).
     #
     # @see http://en.wikipedia.org/wiki/Mired
-    attr_accessor :color_temperature
+    attr_reader :color_temperature
 
     # A fixed name describing the type of group.
     attr_reader :type
