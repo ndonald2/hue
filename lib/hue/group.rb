@@ -83,7 +83,7 @@ module Hue
 
     def scene=(scene)
       scene_id = scene.is_a?(Scene) ? scene.id : scene
-      set_group_state({:scene => scene_id})
+      set_state({:scene => scene_id})
     end
 
     def <<(light_id)
